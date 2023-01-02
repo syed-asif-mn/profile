@@ -728,11 +728,6 @@ strong {
     padding: 2vh 0 2rem 2rem;
   }
 
-
-  /* .full-screen {
-    padding-bottom: 4rem;
-  } */
-
   .color-mode {
     display: none;
   }
@@ -783,7 +778,7 @@ strong {
   }
 
   .image {
-    height: 80vh;
+    height: 80.25vh;
     width: 85vw;
     background-image: url('/images/project/bg.png');
     background-position: 20% 20%;
