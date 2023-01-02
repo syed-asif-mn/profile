@@ -43,14 +43,12 @@ body {
   align-items: center;
   justify-content: center;
   padding: 1rem;
-  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
-  border-radius: 0.5rem;
   background-size: 100% 100%;
-}
-
-.skill:hover {
-  grid-row: auto /span 2;
-  grid-column: auto / span 1;
+background: rgba(255, 255, 255, 0.2);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
 }
 
 .skill-image {
@@ -60,12 +58,6 @@ body {
 
 .skill>h6 {
   display: none;
-}
-
-
-.giticon {
-  background: url('https://api.iconify.design/uil/github.svg?color=gray') no-repeat center center / contain;
-  content: url('https://api.iconify.design/uil/github.svg');
 }
 
 .skill:hover>h6 {
@@ -708,7 +700,7 @@ strong {
 @media (min-width: 1024px) {
 
   .full-screen {
-    padding: 10vh 0 2rem 2rem;
+    padding: 10.5vh 0 2rem 2rem;
   }
 
   .owl-theme .owl-dots {
