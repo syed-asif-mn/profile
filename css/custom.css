@@ -732,6 +732,19 @@ strong {
   color: #ffc200;
 }
 
+
+@media (min-width: 1024px) {
+
+  .full-screen {
+    padding: 10.5vh 0 2rem 2rem;
+  }
+
+  .owl-theme .owl-dots {
+    position: relative;
+    bottom: 50px;
+  }
+}
+
 @media (min-width: 1270px) {
 
   .full-screen {
@@ -745,84 +758,8 @@ strong {
   }
 }
 
-@media (min-width: 1024px) {
-
-  /* .skillset-container> :nth-child(5),
-  .skillset-container> :nth-child(14) {
-    margin-top: 15%;
-  }
-
-  .skillset-container> :nth-child(3),
-  .skillset-container> :nth-child(11) {
-    margin-bottom: 15%;
-  }
-
-  .skillset-container> :nth-child(1) {
-    min-height: 120%;
-  }
-
-  .skillset-container> :nth-child(7) {
-    min-height: 115%;
-    margin-top: -15%;
-  }
-
-  .skillset-container> :nth-child(12) {
-    min-width: 25%;
-  }
-
-  .skillset-container> :nth-child(10) {
-    max-width: 75%;
-  }
-
-  .skillset-container> :nth-child(11) {
-    max-width: 125%;
-    margin-left: -25%;
-  } */
-
-  .full-screen {
-    padding: 10.5vh 0 2rem 2rem;
-  }
-
-  .owl-theme .owl-dots {
-    position: relative;
-    bottom: 50px;
-  }
-}
 
 @media (max-width: 991px) {
-
-  /* .skillset-container> :nth-child(5),
-  .skillset-container> :nth-child(14) {
-    margin-top: 15%;
-  }
-
-  .skillset-container> :nth-child(3),
-  .skillset-container> :nth-child(11) {
-    margin-bottom: 15%;
-  }
-
-  .skillset-container> :nth-child(1) {
-    min-height: 120%;
-  }
-
-  .skillset-container> :nth-child(7) {
-    min-height: 115%;
-    margin-top: -15%;
-  }
-
-  .skillset-container> :nth-child(12) {
-    min-width: 25%;
-  }
-
-  .skillset-container> :nth-child(10) {
-    max-width: 75%;
-  }
-
-  .skillset-container> :nth-child(11) {
-    max-width: 125%;
-    margin-left: -25%;
-  } */
-
   .full-screen {
     padding: 2vh 0 2rem 2rem;
   }
@@ -869,16 +806,8 @@ strong {
   }
 }
 
+
 @media (max-width: 580px) {
-
-  .skill-image {
-    max-width: 30%;
-    max-height: 30%;
-  }
-
-  .skill>h6{
-    font-size: 0.7em;
-  }
 
   .full-screen {
     padding: 0 0.5rem;
@@ -892,7 +821,7 @@ strong {
     background-size: contain;
     background-repeat: no-repeat;
     padding-left: 2rem;
-    padding-top: 10vh
+    padding-top: 10.25vh
   }
 
   .project {
@@ -926,41 +855,20 @@ strong {
   }
 }
 
-@media (max-width: 414px) {
+@media (max-width: 411px) {
 
   .full-screen {
     padding: 0.5rem;
-  }
-
-  .about{
-    margin-top: -2.9em;
-  }
-
-  .owl-carousel{
-    margin-top: -2em;
-  }
-}
-
-@media (max-width: 390px) {
-
-  .full-screen {
-    padding: 0.5rem;
-  }
-
-  .about{
-    margin-top: -2.9em;
-  }
-
-  .owl-carousel{
-    margin-top: -2em;
   }
 
   .image {
-    padding-top: 10vh;
-  }
-
-  #project-start {
-    margin-top: 0.5rem;
+    height: 93.5vh;
+    width: 85vw;
+    background-image: url('/images/project/bg.png');
+    background-position: 20% 20%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-top: 5.25vh;
   }
 
   .animated-info {
