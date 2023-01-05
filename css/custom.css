@@ -1,8 +1,6 @@
 /*
-Template taken from: Tooplate 2115 Marvel
-https://www.tooplate.com/view/2115-marvel
+Template taken from: https://www.tooplate.com/view/2115-marvel
 */
-
 
 @import url("https://fonts.googleapis.com/css?family=Maven+Pro:400,700");
 
@@ -13,133 +11,6 @@ body {
 
 section {
   overflow: hidden;
-}
-
-
-.project-desc {
-  display: block;
-  font-weight: 300;
-  color: #5b5b5b;
-  margin-top: -1.5em;
-  line-height: 18px;
-}
-
-.project-desc::first-letter {
-  font-size: 125%;
-}
-
-.skillset-container {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 1rem;
-  justify-content: center;
-  align-content: center;
-  padding: 3rem 2rem;
-  max-width: 100%;
-}
-
-.skill {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 1rem;
-  background-size: 100% 100%;
-  background: rgba(200, 200, 200, 0.1);
-  backdrop-filter: blur(5px);
-  border-radius: 0.5rem;
-  box-shadow: rgba(100, 100, 100, 0.4) 1.95px 1.95px 2.6px;
-  transition: transform 2s ease 1s;
-}
-
-.skill-image {
-  max-width: 60%;
-  max-height: 60%;
-}
-
-.skill>h6 {
-  display: inline;
-  color: rgba(0, 0, 0, 0.5);
-  padding-top: 1rem;
-}
-
-.skill:hover {
-  animation: expand ease-out 5s;
-  transform: perspective(2500px) rotateY(5deg);
-}
-
-.skill:hover>.skill-image {
-  animation-name: spin3D;
-  animation-duration: 5s;
-  animation-timing-function: ease-in-out;
-}
-
-.skill-level {
-  display: none;
-  font-size: 0.6rem;
-  color: rgba(0, 0, 0, 0.5);
-}
-
-.skill:hover>.skill-level {
-  display: block;
-}
-
-@keyframes expand {
-  0% {
-    grid-row: span 2;
-    transform: perspective(2500px) rotateY(10deg);
-  }
-
-  100% {
-    grid-row: span 2;
-    transform: perspective(2500px) rotateY(10deg);
-  }
-}
-
-@keyframes spin3D {
-  from {
-    transform: scale(1.2) rotateY(0deg)
-  }
-
-  to {
-    transform: scale(1.2) rotateY(360deg)
-  }
-}
-
-.skill.advanced:hover {
-  background: #11998e;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #38ef7d, #11998e);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #38ef7d, #11998e);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-
-.skill.intermediate:hover {
-  background: #FDFC47;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #24FE41, #FDFC47);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #24FE41, #FDFC47);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-
-.skill.beginner:hover {
-  background: #FDC830;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #F37335, #FDC830);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #F37335, #FDC830);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-
-.skill.tool:hover {
-  background: #757F9A;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #D7DDE8, #757F9A);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #D7DDE8, #757F9A);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .overlay {
@@ -361,6 +232,133 @@ strong {
 
   100% {
     opacity: 0;
+  }
+}
+
+
+.project-desc {
+  display: block;
+  font-weight: 300;
+  color: #5b5b5b;
+  margin-top: -1.5em;
+  line-height: 18px;
+}
+
+.project-desc::first-letter {
+  font-size: 125%;
+}
+
+.skillset-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
+  justify-content: center;
+  align-content: center;
+  padding: 3rem 2rem;
+  max-width: 100%;
+}
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background-size: 100% 100%;
+  background: rgba(200, 200, 200, 0.1);
+  backdrop-filter: blur(5px);
+  border-radius: 0.5rem;
+  box-shadow: rgba(100, 100, 100, 0.4) 1.95px 1.95px 2.6px;
+  transition: transform 2s ease 1s;
+}
+
+.skill:hover {
+  animation: expand ease-out 5s;
+  transform: perspective(2500px) rotateY(5deg);
+}
+
+.skill-image {
+  max-width: 60%;
+  max-height: 60%;
+}
+
+.skill:hover>.skill-image {
+  animation-name: spin3D;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+}
+
+.skill>h6 {
+  display: inline;
+  color: rgba(0, 0, 0, 0.5);
+  padding-top: 1rem;
+}
+
+.skill-level {
+  display: none;
+  font-size: 0.6rem;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.skill:hover>.skill-level {
+  display: block;
+}
+
+.skill.advanced:hover {
+  background: #11998e;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #38ef7d, #11998e);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #38ef7d, #11998e);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.skill.intermediate:hover {
+  background: #FDFC47;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #24FE41, #FDFC47);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #24FE41, #FDFC47);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.skill.beginner:hover {
+  background: #FDC830;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #F37335, #FDC830);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #F37335, #FDC830);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.skill.tool:hover {
+  background: #757F9A;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #D7DDE8, #757F9A);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #D7DDE8, #757F9A);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+@keyframes expand {
+  0% {
+    grid-row: span 2;
+    transform: perspective(2500px) rotateY(10deg);
+  }
+
+  100% {
+    grid-row: span 2;
+    transform: perspective(2500px) rotateY(10deg);
+  }
+}
+
+@keyframes spin3D {
+  from {
+    transform: scale(1.2) rotateY(0deg)
+  }
+
+  to {
+    transform: scale(1.2) rotateY(360deg)
   }
 }
 
@@ -791,7 +789,7 @@ strong {
 
 @media (max-width: 768px) {
 
-  .image{
+  .image {
     height: 52vh;
     margin-top: -6rem;
   }
@@ -872,7 +870,7 @@ strong {
     padding: 0.5rem;
   }
 
-  .image{
+  .image {
     height: 100vh;
     margin-bottom: -17rem;
   }
@@ -880,7 +878,7 @@ strong {
   .skillset-container {
     grid-template-columns: repeat(3, 1fr);
   }
-  
+
   .about {
     margin-bottom: -1.5rem;
   }
@@ -906,7 +904,7 @@ strong {
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .about-text>p{
+  .about-text>p {
     font-size: 1.2rem;
   }
 
@@ -944,13 +942,10 @@ strong {
   }
 
   .image {
-    height: 100vh;
-    margin-bottom: -1rem;
+    height: 79vh;
+    margin-bottom: 2rem;
   }
 
-  .about-text {
-    margin-top: -3rem;
-  }
 
   .about {
     padding-bottom: 2.5rem;
@@ -987,7 +982,7 @@ strong {
   }
 }
 
-@media only screen and (max-width: 320px) {
+@media (max-width: 320px) {
   .timeline-info {
     width: 60vw;
   }
