@@ -649,7 +649,7 @@ strong {
 
 .owl-theme .owl-dots .owl-dot {
   outline: none;
-  margin-top: 1rem;
+  margin-top: 5rem;
 }
 
 .owl-theme .owl-dots .owl-dot span {
@@ -854,8 +854,7 @@ strong {
   }
 
   .owl-theme .owl-dot {
-    position: relative;
-    top: 50px;
+    margin-bottom: -1rem;
   }
 
   .timeline-info small {
@@ -882,7 +881,7 @@ strong {
   .about {
     margin-bottom: -1.5rem;
   }
-
+  
   .owl-carousel {
     margin-top: -2rem;
   }
@@ -928,7 +927,7 @@ strong {
   .owl-theme .owl-nav {
     display: none;
   }
-
+  
   .timeline-info small {
     display: block;
     margin: 10px 0 0 0;
@@ -945,7 +944,6 @@ strong {
     height: 79vh;
     margin-bottom: 2rem;
   }
-
 
   .about {
     padding-bottom: 2.5rem;
@@ -1009,7 +1007,7 @@ strong {
   }
 
   .skillset-container {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .animated-text {

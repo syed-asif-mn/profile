@@ -17,13 +17,16 @@
     items: 1,
     loop: true,
     margin: 10,
-    nav: true
+    center: true,
+    autoplay: true,
+    autoplayHoverPause: true,
+    autoplaySpeed: 500
   });
 
   $(document).ready(function () {
     $('html, body').animate({
       scrollTop: $('#about').offset().top - 49
-    }, 5000, 'swing');
+    }, 5000, 'linear');
   });
 
   // SMOOTHSCROLL
@@ -35,6 +38,10 @@
       }, 1500);
       event.preventDefault();
     });
+  });
+
+  $("html, body").on("mousedown wheel DOMMouseScroll mousewheel keyup touchmove", function () {
+    $("html").stop();
   });
 
   // TOOLTIP
