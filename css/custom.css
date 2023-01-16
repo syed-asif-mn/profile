@@ -274,6 +274,7 @@ strong {
 
 .skill:hover {
   animation: expand ease-out 5s;
+  animation-delay: 0.2s;
   transform: perspective(2500px) rotateY(5deg);
 }
 
@@ -286,6 +287,8 @@ strong {
   animation-name: spin3D;
   animation-duration: 5s;
   animation-timing-function: ease-in-out;
+  animation-delay: 0.2s;
+
 }
 
 .skill>h6 {
