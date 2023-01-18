@@ -743,6 +743,14 @@ strong {
     padding: 17vh 0 2rem 2rem;
   }
 
+  .about-image{
+    margin-top: 0.75rem;
+  }
+
+  .overlay{
+    margin-left: 1.5rem;
+  }
+
   .owl-theme .owl-dots {
     position: relative;
     bottom: 50px;
