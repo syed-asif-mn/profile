@@ -274,7 +274,7 @@ strong {
 
 .skill:hover {
   animation: expand ease-out 5s;
-  animation-delay: 0.2s;
+  animation-delay: 0.1s;
   transform: perspective(2500px) rotateY(5deg);
 }
 
@@ -287,7 +287,7 @@ strong {
   animation-name: spin3D;
   animation-duration: 5s;
   animation-timing-function: ease-in-out;
-  animation-delay: 0.2s;
+  animation-delay: 0.1s;
 
 }
 
@@ -366,8 +366,8 @@ strong {
 }
 
 .heading{
-  animation: flow 10s ease-in-out infinite;
-  background: linear-gradient(-60deg, #624e90, #8262ac, #9c6cb6, #ffc200, #ffd036, #ffd448);
+  animation: flow 10s ease-in-out infinite alternate;
+  background: linear-gradient(-60deg, #624e90, #8262ac, #ffc200, #ffd036);
   background-size: 300%;
   background-clip: text;
   -webkit-background-clip: text;
