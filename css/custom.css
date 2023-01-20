@@ -65,7 +65,7 @@ a {
 }
 
 a:hover {
-  color: rgb(255, 196, 0) !important;
+  color: #ffc400 !important;
 }
 
 .navbar-brand .uil {
@@ -365,6 +365,28 @@ strong {
   }
 }
 
+.heading{
+  animation: flow 10s ease-in-out infinite;
+  background: linear-gradient(-60deg, #624e90, #8262ac, #9c6cb6, #ffc200, #ffd036, #ffd448);
+  background-size: 300%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;}
+  
+  @keyframes flow {
+    0% {
+      background-position: 0 50%;
+    }
+  
+    50% {
+      background-position: 100% 50%;
+    }
+  
+    100% {
+      background-position: 0 50%;
+    }
+  }
+
 .navbar {
   position: fixed;
   top: 0;
@@ -422,8 +444,12 @@ strong {
   transform: translate3d(0, 0, 0);
 }
 
-.navbar-light .navbar-nav .nav-link:focus,
 .navbar-light .navbar-nav .nav-link:hover {
+  color: #624e90 !important;
+  font-weight: bold;
+}
+
+.navbar-light .navbar-nav .nav-link:focus {
   color: #ffc200;
   font-weight: bold;
 }
@@ -524,7 +550,11 @@ strong {
 }
 
 .dark-mode .navbar-light .navbar-nav .nav-link:hover {
-  color: #ffc200;
+  color: #624e90 !important;
+}
+
+.dark-mode .navbar-light .navbar-nav .nav-link:focus {
+  color: #ffc200 !important;
 }
 
 .dark-mode .navbar[class*="headroom--not-top"] {

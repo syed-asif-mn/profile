@@ -47,4 +47,19 @@
   // TOOLTIP
   $('.social-links a').tooltip();
 
+
+  $("body").mousemove(function( event ) {
+
+    windowWidth = $(window).width();
+    windowHeight = $(window).height();
+    
+    mouseXpercentage = Math.round(event.pageX / windowWidth * 100);
+    mouseYpercentage = Math.round(event.pageY / windowHeight * 100);
+    
+    var w = $(this).width(),
+        pct = 360*(+event.pageX)/w,
+        bg = 'radial-gradient(at ' + mouseXpercentage + '% ' + mouseYpercentage + '%, #3498db, #9b59b6)';
+        $("body").css("background-image", bg);
+  });
+
 })(jQuery);
