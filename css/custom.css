@@ -365,27 +365,28 @@ strong {
   }
 }
 
-.heading{
+.heading {
   animation: flow 10s ease-in-out infinite alternate;
   background: linear-gradient(-60deg, #624e90, #8262ac, #ffc200, #ffd036);
   background-size: 300%;
   background-clip: text;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;}
-  
-  @keyframes flow {
-    0% {
-      background-position: 0 50%;
-    }
-  
-    50% {
-      background-position: 100% 50%;
-    }
-  
-    100% {
-      background-position: 0 50%;
-    }
+  -webkit-text-fill-color: transparent;
+}
+
+@keyframes flow {
+  0% {
+    background-position: 0 50%;
   }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0 50%;
+  }
+}
 
 .navbar {
   position: fixed;
@@ -767,24 +768,21 @@ strong {
   color: #ffc200;
 }
 
-@media (max-width: 1440px) {
+.full-screen {
+  padding: 17vh 0 2rem 2rem;
+}
 
-  .full-screen {
-    padding: 17vh 0 2rem 2rem;
-  }
+.about-image {
+  margin-top: 0.75rem;
+}
 
-  .about-image{
-    margin-top: 0.75rem;
-  }
+.overlay {
+  margin-left: 1.5rem;
+}
 
-  .overlay{
-    margin-left: 1.5rem;
-  }
-
-  .owl-theme .owl-dots {
-    position: relative;
-    margin-top: -4rem !important;
-  }
+.owl-theme .owl-dots {
+  position: relative;
+  margin-top: -4rem !important;
 }
 
 @media (max-width: 1280px) {
@@ -818,7 +816,7 @@ strong {
     margin-top: 2rem;
   }
 
-  #skillset{
+  #skillset {
     margin-top: 2rem;
   }
 
@@ -910,7 +908,7 @@ strong {
 
 @media (max-width: 425px) {
 
-  h2{
+  h2 {
     display: inline-block;
   }
 
@@ -923,7 +921,7 @@ strong {
     margin-bottom: -10rem;
   }
 
-  #skillset{
+  #skillset {
     margin-top: -1rem;
   }
 
@@ -936,7 +934,7 @@ strong {
   }
 }
 
-@media (max-width: 393px) {
+/* @media (max-width: 393px) {
 
   .full-screen {
     padding: 0.5rem;
@@ -948,7 +946,7 @@ strong {
     margin-bottom: -8rem;
   }
 
-  .about-text>p{
+  .about-text>p {
     padding: 2rem 0;
   }
 
@@ -976,14 +974,14 @@ strong {
   .owl-theme .owl-nav {
     display: none;
   }
-  
+
   .timeline-info small {
     display: block;
     margin: 10px 0 0 0;
   }
-}
+} */
 
-@media (max-width: 375px) {
+@media (max-width: 393px) {
 
   .full-screen {
     padding: 0.5rem;
@@ -1038,12 +1036,14 @@ strong {
     overflow-wrap: break-word;
   }
 
-  .overlay{
+  .overlay {
     min-height: max-content;
   }
-  .image{
+
+  .image {
     min-height: 90vh;
   }
+
   .about {
     margin-left: -1rem;
     margin-top: -3rem;
