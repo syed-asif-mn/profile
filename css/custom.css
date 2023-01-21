@@ -783,7 +783,7 @@ strong {
 
   .owl-theme .owl-dots {
     position: relative;
-    bottom: 50px;
+    margin-top: -4rem !important;
   }
 }
 
@@ -920,7 +920,7 @@ strong {
 
   .image {
     height: 88vh;
-    margin-bottom: -11rem;
+    margin-bottom: -10rem;
   }
 
   #skillset{
