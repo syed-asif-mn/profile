@@ -516,7 +516,7 @@ strong {
 
 .color-mode-icon {
   position: relative;
-  right: 6px;
+  right: -3vw;
 }
 
 .color-mode-icon:after {
@@ -794,13 +794,12 @@ strong {
   }
 }
 
-@media (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
 
   .image {
-    height: 90vh;
-    background-size: contain;
-    margin-top: -2.5rem;
+    height: 50vh;
     transform: scale(0.9);
+    margin-top: -10rem;
   }
 }
 
@@ -830,11 +829,12 @@ strong {
   }
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
 
   .image {
-    height: 49.5vh;
-    margin-top: -6rem;
+    height: 51.5vh;
+    transform: scale(0.9);
+    margin-top: -6vh;
   }
 
   h1 {
@@ -918,7 +918,7 @@ strong {
 
   .image {
     height: 88vh;
-    margin-bottom: -10rem;
+    margin-bottom: -17vh;
   }
 
   #skillset {
@@ -934,16 +934,29 @@ strong {
   }
 }
 
-/* @media (max-width: 393px) {
+@media (max-width: 414px) {
+  .image {
+    height: 91vh;
+    margin-bottom: -8vh;
+  }
+}
+
+@media (max-width: 412px) {
+  .image {
+    height: 100vh;
+    margin-bottom: -17vh;
+  }
+}
+
+@media (max-width: 393px) {
 
   .full-screen {
     padding: 0.5rem;
   }
 
   .image {
-    height: 87vh;
-    margin-top: 6rem;
-    margin-bottom: -8rem;
+    height: 85vh;
+    margin-bottom: -15vh;
   }
 
   .about-text>p {
@@ -979,16 +992,16 @@ strong {
     display: block;
     margin: 10px 0 0 0;
   }
-} */
+}
 
-@media (max-width: 393px) {
+@media (max-width: 375px) {
 
   .full-screen {
     padding: 0.5rem;
   }
 
   .image {
-    height: 79vh;
+    height: 83vh;
     margin-bottom: 2rem;
   }
 
