@@ -793,7 +793,30 @@ strong {
   margin-top: -4rem !important;
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 2400px) {
+
+  .image {
+    height: 85vh;
+    background-size: contain;
+    transform: scale(1.5);
+    padding-top: 25rem;
+  }
+
+  .about-image{
+    margin-top: 10rem;
+  }
+
+  .about-text{
+    padding-left: 7.5rem;
+  }
+
+  .owl-carousel{
+    transform: scale(1.2);
+    margin-top: 5rem !important;
+  }
+}
+
+@media (min-width: 1400px) {
 
   #resume, #contact{
     margin-top: 10rem;
@@ -826,29 +849,6 @@ strong {
 
   .owl-theme .owl-dot {
     margin-bottom: 2rem;
-  }
-}
-
-@media (min-width: 2400px) {
-
-  .image {
-    height: 85vh;
-    background-size: contain;
-    transform: scale(1.5);
-    padding-top: 25rem;
-  }
-
-  .about-image{
-    margin-top: 10rem;
-  }
-
-  .about-text{
-    padding-left: 7.5rem;
-  }
-
-  .owl-carousel{
-    transform: scale(1.2);
-    margin-top: 5rem !important;
   }
 }
 
