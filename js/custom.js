@@ -23,6 +23,8 @@
   });
 
   $(document).ready(function () {
+    $('.color-mode-icon').toggleClass('active')
+    $('body').toggleClass('dark-mode')
     $('html, body').animate({
       scrollTop: $('#about').offset().top - 49
     }, 7000, "linear"
