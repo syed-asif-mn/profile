@@ -277,9 +277,9 @@ strong {
 }
 
 .skill:hover {
-  animation: expand ease-out 5s;
+  animation: animate-skills ease-in-out 5s;
   animation-delay: 0.1s;
-  transform: perspective(2500px) rotateY(5deg);
+  /* transform: perspective(2500px) rotateY(5deg); */
 }
 
 .skill-image {
@@ -347,15 +347,15 @@ strong {
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-@keyframes expand {
+@keyframes animate-skills {
   0% {
-    grid-row: span 2;
-    transform: perspective(2500px) rotateY(10deg);
+    /* grid-row: span 2; */
+    transform: perspective(2500px) rotateX(30deg);
   }
 
   100% {
-    grid-row: span 2;
-    transform: perspective(2500px) rotateY(10deg);
+    /* grid-row: span 2; */
+    transform: perspective(2500px) rotateX(30deg);
   }
 }
 

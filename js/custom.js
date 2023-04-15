@@ -19,7 +19,7 @@
     center: true,
     autoplay: true,
     autoplayHoverPause: true,
-    autoplaySpeed: 300
+    autoplaySpeed: 700
   });
 
   $(document).ready(function () {
