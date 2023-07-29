@@ -22,11 +22,16 @@
     autoplaySpeed: 700
   });
 
-  $('.about-image').on('load', function() {
-    $('html, body').animate({
-      scrollTop: $('#about').offset().top - 49
-    }, 7000, "linear");
+  $(document).ready(function () {
+      $(window).on('load', function() {
+      $('html, body').animate({
+        scrollTop: $('#about').offset().top - 49
+      }, 8000, "linear"
+      )
+    });
   });
+
+  
 
   // SMOOTHSCROLL
   $(function () {
