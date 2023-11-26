@@ -308,9 +308,9 @@ strong {
   color: rgba(0, 0, 0, 0.5);
 }
 
-/* .skill:hover>.skill-level {
+.skill:hover>.skill-level {
   display: block;
-} */
+}
 
 .skill.advanced:hover {
   background: #11998e;
