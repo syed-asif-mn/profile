@@ -20,6 +20,32 @@
   <link rel="stylesheet" href="css/custom.css">
 </head>
 
+<script>
+  let colors = ["red","purple","blue","indigo","violet","white","yellow","gold"];
+  let i = 0;
+
+  document.onmousemove = function(e){
+      i++;
+      let x = e.pageX;
+      let y = e.pageY;
+
+      let span = document.createElement("span");
+      span.classList.add("follower");
+      span.style.top = y + "px";
+      span.style.left = x + "px";
+      span.style.backgroundColor = colors[i - 1];
+      document.body.appendChild(span);
+
+      if(i == colors.length){
+          i = 0;
+      }
+      setTimeout(() => {
+          span.remove();
+      }, 1000);
+  }
+
+</script>
+
 <body>
 
   <!-- MENU -->
@@ -380,14 +406,14 @@
                 </h3>
                 <ol>
                   <li>
-                    <p>Actively involved in designing, full-stack development, testin and documenting OnScreen Display Configurator and Position
+                    <p>Actively involved in designing, development, testing and documenting OnScreen Display, OnScreen Display Configurator and Position
                       list editor subsystems.
-                    <p>Tech stack: <b>Angular</b>,<b> C#</b>,<b> Selenium</b>,<b> Specflow</b></p>
-                    <p>Methodology: <b>AGILE</b></p>
+                    <p>Tech stack: <b>Angular</b>,<b> C#</b>,<b> Selenium</b>,<b> Specflow</b>, <b> NgRx</b></p>
+                    <p>Methodology: <b>Scaled AGILE</b></p>
                   </li>
                   <li>
                     <p>Developing and maintaining System-level Defects/Metrics/Feature Analytics reports.
-                    <p>Tech stack: <b>Python</b>, <b>AZURE Services</b>, <b>Power BI</b></p>
+                    <p>Tech stack: <b>Python</b>, <b>AZURE Services</b>, <b>Microsoft Power BI</b></p>
                     </p>
                   </li>
                   <li>

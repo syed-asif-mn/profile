@@ -31,8 +31,6 @@
     });
   });
 
-  
-
   // SMOOTHSCROLL
   $(function () {
     $('.nav-link, .custom-btn-link').on('click', function (event) {
