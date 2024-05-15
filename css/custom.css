@@ -277,11 +277,11 @@ strong {
   transition: transform 2s ease 1s;
 }
 
-.skill:hover {
+/* .skill:hover {
   animation: animate-skills ease-in-out 5s;
   animation-delay: 0.1s;
-  /* transform: perspective(2500px) rotateY(5deg); */
-}
+  transform: perspective(2500px) rotateY(5deg);
+} */
 
 .skill-image {
   max-width: 60%;
@@ -303,50 +303,50 @@ strong {
 }
 
 .skill-level {
-  display: none;
+  opacity: 0;
   font-size: 0.6rem;
-  color: rgba(0, 0, 0, 0.5);
+  color: silver;
 }
 
 .skill:hover>.skill-level {
-  display: block;
+  opacity: 1;
 }
 
-.skill.advanced:hover {
+/* .skill.advanced:hover {
   background: #11998e;
-  /* fallback for old browsers */
+  
   background: -webkit-linear-gradient(to right, #38ef7d, #11998e);
-  /* Chrome 10-25, Safari 5.1-6 */
+  
   background: linear-gradient(to right, #38ef7d, #11998e);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 .skill.intermediate:hover {
   background: #FDFC47;
-  /* fallback for old browsers */
+  
   background: -webkit-linear-gradient(to right, #24FE41, #FDFC47);
-  /* Chrome 10-25, Safari 5.1-6 */
+  
   background: linear-gradient(to right, #24FE41, #FDFC47);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 .skill.beginner:hover {
   background: #FDC830;
-  /* fallback for old browsers */
+  
   background: -webkit-linear-gradient(to right, #F37335, #FDC830);
-  /* Chrome 10-25, Safari 5.1-6 */
+  
   background: linear-gradient(to right, #F37335, #FDC830);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
+
+} 
 
 .skill.tool:hover {
   background: #757F9A;
-  /* fallback for old browsers */
+  
   background: -webkit-linear-gradient(to right, #D7DDE8, #757F9A);
-  /* Chrome 10-25, Safari 5.1-6 */
+  
   background: linear-gradient(to right, #D7DDE8, #757F9A);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
+
+} */
 
 /* @keyframes animate-skills {
   0% {
@@ -371,7 +371,7 @@ strong {
 }
 
 .heading {
-  animation: flow 10s ease-in-out infinite alternate;
+  animation: flow 20s ease-in-out infinite alternate;
   background: linear-gradient(-60deg, #624e90, #8262ac, #ffc200, #ffd036);
   background-size: 300%;
   background-clip: text;
