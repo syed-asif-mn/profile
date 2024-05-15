@@ -32,8 +32,7 @@
   // });
 
   $(document).ready(function() {
-    $('body').toggleClass('dark-mode')
-    let colors = ["violet","indigo","violet","white","gold"];
+    let colors = ["violet", "white", "indigo", "white", "gold"];
     let i = 0;
 
     $(document).on("mousemove", function(e) {
@@ -43,8 +42,8 @@
 
       let $span = $("<span></span>").addClass("follower");
       $span.css({
-        "top": y + "px",
-        "left": x + "px",
+        "top": y - 50 + "px",
+        "left": x - 50 + "px",
         "background-color": colors[i - 1]
       });
       $("body").append($span);
