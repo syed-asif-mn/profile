@@ -22,16 +22,17 @@
     autoplaySpeed: 700
   });
 
-  $(document).ready(function () {
-      $(window).on('load', function() {
-      $('html, body').animate({
-        scrollTop: $('#about').offset().top - 49
-      }, 8000, "linear"
-      )
-    });
-  });
+  // $(document).ready(function () {
+  //     $(window).on('load', function() {
+  //     $('html, body').animate({
+  //       scrollTop: $('#about').offset().top - 49
+  //     }, 8000, "linear"
+  //     )
+  //   });
+  // });
 
   $(document).ready(function() {
+    $('body').toggleClass('dark-mode')
     let colors = ["violet","indigo","violet","white","gold"];
     let i = 0;
 
