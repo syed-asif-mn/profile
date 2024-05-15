@@ -31,6 +31,32 @@
     });
   });
 
+  $(document).ready(function() {
+    let colors = ["violet","indigo","violet","white","gold"];
+    let i = 0;
+
+    $(document).on("mousemove", function(e) {
+      i++;
+      let x = e.pageX;
+      let y = e.pageY;
+
+      let $span = $("<span></span>").addClass("follower");
+      $span.css({
+        "top": y + "px",
+        "left": x + "px",
+        "background-color": colors[i - 1]
+      });
+      $("body").append($span);
+
+      if(i == colors.length){
+        i = 0;
+      }
+      setTimeout(() => {
+        $span.remove();
+      }, 1000);
+    });
+  });
+
   // SMOOTHSCROLL
   $(function () {
     $('.nav-link, .custom-btn-link').on('click', function (event) {
