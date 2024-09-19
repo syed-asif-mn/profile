@@ -31,31 +31,31 @@
   //   });
   // });
 
-  $(document).ready(function() {
-    let colors = ["violet", "white", "indigo", "white", "gold"];
-    let i = 0;
+  // $(document).ready(function() {
+  //   let colors = ["violet", "white", "indigo", "white", "gold"];
+  //   let i = 0;
 
-    $(document).on("mousemove", function(e) {
-      i++;
-      let x = e.pageX;
-      let y = e.pageY;
+  //   $(document).on("mousemove", function(e) {
+  //     i++;
+  //     let x = e.pageX;
+  //     let y = e.pageY;
 
-      let $span = $("<span></span>").addClass("follower");
-      $span.css({
-        "top": y - 50 + "px",
-        "left": x - 50 + "px",
-        "background-color": colors[i - 1]
-      });
-      $("body").append($span);
+  //     let $span = $("<span></span>").addClass("follower");
+  //     $span.css({
+  //       "top": y - 50 + "px",
+  //       "left": x - 50 + "px",
+  //       "background-color": colors[i - 1]
+  //     });
+  //     $("body").append($span);
 
-      if(i == colors.length){
-        i = 0;
-      }
-      setTimeout(() => {
-        $span.remove();
-      }, 1000);
-    });
-  });
+  //     if(i == colors.length){
+  //       i = 0;
+  //     }
+  //     setTimeout(() => {
+  //       $span.remove();
+  //     }, 1000);
+  //   });
+  // });
 
   // SMOOTHSCROLL
   $(function () {
