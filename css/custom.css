@@ -289,10 +289,11 @@ strong {
 }
 
 .skill:hover>.skill-image {
-  animation-name: spin3D;
+   transform: scale(1.2);
+  /* animation-name: spin3D;
   animation-duration: 5s;
   animation-timing-function: ease-in-out;
-  animation-delay: 0.1s;
+  animation-delay: 0.1s; */
 
 }
 
@@ -360,7 +361,7 @@ strong {
   }
 } */
 
-@keyframes spin3D {
+/* @keyframes spin3D {
   from {
     transform: scale(1.2) rotateY(0deg)
   }
@@ -368,7 +369,7 @@ strong {
   to {
     transform: scale(1.2) rotateY(360deg)
   }
-}
+} */
 
 .heading {
   animation: flow 20s ease-in-out infinite alternate;
